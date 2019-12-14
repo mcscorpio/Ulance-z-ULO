@@ -1,0 +1,28 @@
+import turtle
+
+t=turtle.Turtle()
+bok=200
+t.speed(0)
+
+for i in range(1000):
+  t.forward(bok)
+  t.left(90)
+  bok-=1
+  if(bok<0):
+    for i in range(1000):
+      t.forward(bok)
+      t.left(90)
+      bok+=1
+      if(bok>100):
+        for i in range(1000):
+          t.forward(bok)
+          t.left(90)
+          bok-=1
+          if(bok<0):
+            for i in range(1000):
+              t.forward(bok)
+              t.left(90)
+              bok+=1   
+              if(bok>50):
+                break
+              
